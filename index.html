@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 5px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      background: #fff;
+      border: 2px solid #ccc;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe </h1>
+  <div id="board"></div>
+  <div id="message">Your turn (X)</div>
+  <button onclick="resetGame()">Restart Game</button>
+
+ <script src="script.js"></script>
+</body>
+</html>
